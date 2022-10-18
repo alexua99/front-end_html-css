@@ -1,0 +1,46 @@
+.p {
+    color: green;
+}
+
+
+h1 {}
+
+/* == 0 */
+
+h1 {}
+
+/* == 0 + 1 */
+
+.h1 {}
+
+/* == 10 */
+
+#id {}
+
+/* == 1000 */
+
+
+p {
+    color: blue !important;
+    /* == ∞ */
+}
+
+
+p {
+    color: yellow !important;
+    /* == ∞ + 1 */
+}
+
+
+.hero .hero__title {
+    color: green;
+}
+
+/* == 10 + 10 */
+
+
+.hero__title {
+    color: red;
+}
+
+/* == 10 + 1 */

@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+/* Reset css End */
+
+
+.block-img {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.button {
+    background-color: aquamarine;
+    width: 200px;
+    border-radius: 20px;
+}
