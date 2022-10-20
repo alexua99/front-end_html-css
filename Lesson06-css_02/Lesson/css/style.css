@@ -1,0 +1,42 @@
+.hero .title {
+    color: red;
+}
+
+.title,
+.text,
+.text1 {
+    color: red;
+}
+
+
+.hero>.text {
+    color: blue;
+}
+
+
+.skills__title+.skills__nav {
+    width: 20px;
+    height: 20px;
+    background: red;
+
+}
+
+.skills__title~.skills__nav {
+    width: 20px;
+    height: 20px;
+    background: red;
+    margin: 5px;
+}
+
+.skills__title.title {
+    color: red;
+}
+
+.container {
+    background: yellow;
+    padding: 20px;
+}
+
+.hero+.skills {
+    background-color: red;
+}
