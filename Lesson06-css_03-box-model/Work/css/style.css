@@ -22,11 +22,11 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-@media (min-width: 991px) {
+/* @media (min-width: 991px) {
     body {
         color: red;
     }
-}
+} */
 
 .wrapp {
     overflow: hidden;
