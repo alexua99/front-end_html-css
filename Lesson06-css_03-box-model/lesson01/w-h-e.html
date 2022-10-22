@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+          background-color: brown;
+          width: 200px; /* vWidth 1vw = 1% windows width */
+           height: 300px; /* vHeight 1vh = 1% windows height */
+          
+        }
+        .box::before {
+            content: '';
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <button>start</button>
+    </div>
+</body>
+</html>
