@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box__item{
+            background-color: azure;
+        }
+        .box__box {
+            width: 300px;
+            height: 200px;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero__img--desk {
+            display: block;
+            background-image: url('test');
+        }
+        .hero__img--mob {
+            display: none;
+        }
+
+        @media (max-width: 991px) {
+            .hero__img--desk {
+            display: none;
+            background-image: url('test2');
+        }
+        .hero__img--mob {
+            display: block;
+        }
+        }
+      
+    </style>
+</head>
+<body>
+   <header class="hero">
+       <div class="container">
+        <img src="" alt="" class="hero__img--desk">
+        <img src="" alt="" class="hero__img--mob">
+       </div>
+
+       <picture>
+        <source srcset="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ZhplzyJ9" media="(min-width: 765px)" />
+        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="MDN"  width="300"/>
+      </picture>
+   </header>
+</body>
+</html>
