@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: row;
+        }
+        .box__item {
+           width: 100%;
+            background-color: blue;
+            text-align: center;
+            color: #fff;
+            font-size: 40px;
+
+
+            flex-grow: 0; /* Заповнення вільного місця */
+            flex-shrink: 1; /* процент стискання */
+            flex-basis: auto; /* Розмір по основні осі */
+        }
+        .box-1 {
+            order: 1;
+            width: 50px;
+            min-width: 50px;
+        }
+        .box-2 {
+            order: 4;
+
+        }
+        .box-3 {
+            order: 3;
+        }
+        .box-4 {
+            order: 2;
+        }
+        .box-5 {
+            order: 5;
+        }
+        @media (min-width: 768px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box__item box-1">
+            1 
+        </div>
+        <div class="box__item box-2">
+            2 
+        </div>
+    
+    </div>
+</body>
+</html>
