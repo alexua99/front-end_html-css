@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hero {
+            background-color: blue;
+            position: relative;
+        }
+        .wrapper {
+            height: 100vh;
+            background: goldenrod;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #fff;
+            margin: 10px;
+
+            position: static;
+        }
+        .box-position {
+            position: absolute;
+            top: 100px;
+            left: 112px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box box-position">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

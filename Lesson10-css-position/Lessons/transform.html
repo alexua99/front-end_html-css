@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    .box {
+        padding: 20px;
+        width: 200px;
+        background-color: green;
+        transition: transform 1s,  background-color 1s ease-in-out, color 1s;
+
+        transform: translate(0);
+        transform: scale(1);
+        color: transparent;
+         
+    }
+    .box:hover {
+        transform: rotateX(180deg) scale(1.2);
+        background-color: red;
+        color: #fff;
+    }
+   </style>
+</head>
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error vitae esse culpa nisi autem ipsum, quae facilis et ipsam!
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error vitae esse culpa nisi autem ipsum, quae facilis et ipsam!
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error vitae esse culpa nisi autem ipsum, quae facilis et ipsam!
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error vitae esse culpa nisi autem ipsum, quae facilis et ipsam!
+    </div>
+</body>
+</html>

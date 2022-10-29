@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hero {
+            background-color: blue;
+            position: relative;
+            height: 100vh;
+        }
+        .wrapper {
+            height: 100vh;
+            background: goldenrod;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #fff;
+            margin: 10px;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 1s;
+        }
+       
+        .z-4 {
+            transform: translate(-40%, -40%); 
+            background-color: blueviolet;
+            z-index: 3;
+        }
+        .z-2 {
+            transform: translate(-60%, -60%); 
+            background-color: aquamarine;
+            z-index: 2;
+        }
+         .hero__container:hover  .z-2 {
+            transform: translate(-80%, -80%); 
+         }
+         .hero__container:hover  .z-4 {
+            transform: translate(-20%, -20%); 
+         }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="box z-1">1</div>
+                <div class="box z-2">2</div>
+                <div class="box z-3">3</div>
+                <div class="box z-4">4</div>
+                <div class="box z-5">5</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
