@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        ul {
+            background-color: bisque;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media (min-width: 991px) {
+            ul {
+            position: static;
+            height: auto;
+            background: transparent;
+            flex-direction: row;
+        }
+        .button {
+            display: none;
+        }
+        }
+        .button {
+            position: relative;
+            z-index: 100;
+            text-align: right;
+        }
+        .gum-button {
+            visibility: hidden;
+        }
+        .cross-close {
+            display: none;
+        }
+        
+        .gum-button:checked ~ ul {
+            background-color: red;
+            height: 100vh;
+        }
+        .gum-button:checked ~ .button .cross-close {
+            display: block;
+        }
+        .gum-button:checked ~ .button .cross {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <nav>
+                <label for="gam">
+                    <input class="gum-button" type="checkbox" id="gam">
+                    <div class="button">
+                        <span class="cross-close">Х</span>
+                        <span class="cross">=</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Conact</a>
+                        </li>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                    </ul>
+                </label>
+            </nav>
+            <h1 class="hero__title">Lorem4</h1>
+        </div>
+    </header>
+    
+</body>
+</html>
