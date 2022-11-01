@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /*display: flex;*/
+        /* .box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box__item {
+            width: 19%;
+            padding: 20px;
+            border: 2px dashed red;
+        } */
+
+        .box {
+            display: grid;
+           /* grid-template-columns: 100px 1fr repeat(2, 150px);*/
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 100px 400px 20px; */
+        }
+        .box__item {
+            padding: 10px 20px;
+            border: 2px dashed red;
+        }
+        .box-1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+            grid-row-start: 1;
+            grid-row-end: 1;
+        } 
+        .box-2 {
+            grid-column-start: 2;
+            grid-column-end:4;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <div class="box__item box-1">1</div>
+        <div class="box__item box-2">2</div>
+        <div class="box__item box-3">3</div>
+        <div class="box__item">4</div>
+        <div class="box__item">5</div>
+        <div class="box__item">6</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+        <div class="box__item">7</div>
+    </div>
+</body>
+</html>
