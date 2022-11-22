@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        .header__item {
+            width: 544px;
+            min-width: 544px;
+        }
+        h4 {
+            display: flex;
+            align-items: center;
+        }
+        h4::after {
+            content: '';
+            
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: blue;
+          margin: 0 10;
+        }
+        .header__container {
+            display: flex;
+            gap: 30px;
+            overflow: scroll;
+            
+        }
+        .hero {
+            background-color: red;
+            height: 200px;
+        }
+        .header__container::-webkit-scrollbar {
+        display: none;
+        }
+        .header__container {
+            -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <section class="hero">
+        <h1>test</h1>
+    </section>
+
+    <header class="header">
+          <div class="header__container">
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+            <div class="header__item">
+                <img src="./img01.png" alt="">
+                <h4>title</h4>
+            </div>
+          </div>
+    </header>
+</body>
+</html>
