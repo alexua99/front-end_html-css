@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: bisque;
+        }
+
+        .header__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header__nav {
+            margin: 0 auto;
+        }
+
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .header__menu-item {
+            position: relative;
+            padding: 10px;
+            width: 100%;
+            background: red;
+        }
+
+        .header__menu-item .header__menu-sub-item {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            left: 0;
+            top: 27px;
+            background-color: bisque;
+            padding: 10px;
+
+        }
+
+        .header__menu-item-category .header__menu-item-category-show {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            left: 80px;
+            top: 7px;
+            background-color: black;
+            padding: 10px;
+
+        }
+
+        .header__menu-item:hover .header__menu-sub-item {
+            display: flex;
+        }
+
+        .header__menu-item-category:hover .header__menu-item-category-show {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">Logo</div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a class="header__link" href="#">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__link" href="#">Contact</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__link" href="#">Shop</a>
+                            <ul class="header__menu-sub-item">
+                                <li class="header__menu-item header__menu-item-category">
+                                    <a class="header__link" href="">Mobile</a>
+                                    <ul class="header__menu-item-category-show">
+                                        <li class="header__menu-item">
+                                            <a class="header__link" href="">Samsung</a>
+
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a class="header__link" href="">Iphone</a>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__link" href="">MacBook</a>
+
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__link" href="">Monitor</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+</body>
+
+</html>
